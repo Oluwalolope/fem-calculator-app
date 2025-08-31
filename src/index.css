@@ -1,68 +1,130 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  /* ==== font sizing ==== */
+  --fs-100: 0.5rem;
+  --fs-200: 0.75rem;
+  --fs-300: 0.875rem;
+  --fs-400: 1rem;
+  --fs-500: 1.125rem;
+  --fs-600: 1.25rem;
+  --fs-700: 1.5rem;
+  --fs-800: 2rem;
+  --fs-900: 3rem;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* ==== font weight ==== */
+  --fw-light: 400;
+  --fw-bold: 700;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* ==== spacing ==== */
+  --spacing-100: 0.5rem;
+  --spacing-200: 0.75rem;
+  --spacing-300: 0.875rem;
+  --spacing-400: 1rem;
+  --spacing-500: 1.125rem;
+  --spacing-600: 1.5rem;
+  --spacing-700: 2rem;
+  --spacing-800: 2.5rem;
+  --spacing-900: 3rem;
+
+  /* ==== background color ==== */
+  --bg-main: hsl(222, 26%, 31%);
+  --bg-main-toggle: hsl(222, 31%, 20%);
+  --bg-screen: hsl(224, 36%, 15%);
+
+  --bg-key-main: hsl(225, 21%, 49%);
+  --bg-key-shadow: hsl(224, 28%, 35%);
+  --bg-key-main-toggle: hsl(222, 31%, 20%);
+  --bg-screen: hsl(224, 36%, 15%);
+
+
+  /* ==== color ==== */
+  --clr-primary-100: hsl(172, 67%, 45%);
+  --clr-primary-200: hsla(26, 100%, 55%, 0.75);
+  --clr-primary-400: hsl(26, 100%, 55%);
+
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-200: hsl(189, 41%, 97%);
+  --clr-neutral-300: hsl(185, 41%, 84%);
+  --clr-neutral-400: hsl(184, 14%, 56%);
+  --clr-neutral-500: hsl(186, 14%, 43%);
+  --clr-neutral-800: hsl(183, 100%, 15%);
+  --clr-neutral-900: hsl(0, 0%, 0%);
+
+  /* ==== font family ==== */
+  --ff: "League Spartan", sans-serif;
+  --ff-head: var(--ff);
+  --ff-body: var(--ff);
+
+  /* ==== border radius ==== */
+  --br: 0.5rem;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-a:hover {
-  color: #535bf2;
+
+html {
+  font-family: var(--ff);
+  font-variant-numeric: tabular-nums;
 }
 
 body {
-  margin: 0;
-  display: flex;
+  display: grid;
+  background-color: var(--bg-main);
   place-items: center;
-  min-width: 320px;
+  overflow-x: hidden;
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+#root {
+  width: 100%;
+  margin-inline: auto;
+  width: min(100% - 2rem, 450px);
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  min-height: 400px;
+  width: 100%;
+  padding: var(--spacing-400);
+  gap: var(--spacing-400);
+  
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+.logo {
+  color: #fff;
+  font-size: var(--fs-700);
+}
+.screen {
+  background-color: var(--bg-screen);
+  height: 100px;
+  width: 100%;
+  border-radius: var(--br);
+}
+.keypad {
+  background-color: var(--bg-main-toggle);
+  height: 400px;
+  width: 100%;
+  border-radius: var(--br);
+}
+
+
+/* Mobile View  */
+@media (max-width: 600px) {
+  body {
+    margin-top: var(--spacing-600);
+    margin-inline: 0;
+    width: 100%;
   }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
+  .container {
+    flex-direction: column;
+    margin-top: var(--spacing-600);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 }
