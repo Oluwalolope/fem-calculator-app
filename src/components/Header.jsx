@@ -1,10 +1,10 @@
 import ThemeOption from "./ThemeOption";
 
-const Header = () => {
+const Header = ({ currentTheme, handleChange}) => {
     return (
         <header>
             <h1 className="logo">calc</h1>
-            <ThemeOption />
+            <ThemeOption currentTheme={currentTheme} handleThemeChange={handleChange}/>
         </header>
     );
 }

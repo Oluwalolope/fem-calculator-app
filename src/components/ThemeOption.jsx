@@ -1,17 +1,13 @@
-const ThemeOption = () => {
+import ThemeOptionButton from "./ThemeOptionButton";
+
+const ThemeOption = ({currentTheme, handleThemeChange}) => {
     return (
         <div className="theme">
             <span>Theme</span>
             <menu >
-                <button>
-                    <span>1</span>
-                </button>
-                <button>
-                    <span>2</span>
-                </button>
-                <button>
-                    <span>3</span>
-                </button>
+                <ThemeOptionButton currentTheme={currentTheme} onThemeUpdate={handleThemeChange} value={1} />
+                <ThemeOptionButton currentTheme={currentTheme} onThemeUpdate={handleThemeChange} value={2} />
+                <ThemeOptionButton currentTheme={currentTheme} onThemeUpdate={handleThemeChange} value={3} />
             </menu>
         </div>    
     );
