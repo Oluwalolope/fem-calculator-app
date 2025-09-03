@@ -15,6 +15,7 @@
   --fw-bold: 700;
 
   /* ==== spacing ==== */
+  --spacing-50: 0.2rem;
   --spacing-100: 0.5rem;
   --spacing-200: 0.75rem;
   --spacing-300: 0.875rem;
@@ -29,25 +30,22 @@
   --bg-main: hsl(222, 26%, 31%);
   --bg-main-toggle: hsl(222, 31%, 20%);
   --bg-screen: hsl(224, 36%, 15%);
+  --primary-font-clr: hsl(0, 100%, 100%);
+  --secondary-font-clr: hsl(221, 14%, 31%);
 
-  --bg-key-main: hsl(225, 21%, 49%);
-  --bg-key-shadow: hsl(224, 28%, 35%);
+  --bg-primary-key-main: hsl(0, 0%, 90%);
+  --bg-primary-key-shadow: hsl(28, 16%, 65%);
+
+  --bg-secondary-key-main: hsl(225, 21%, 49%);
+  --bg-secondary-key-shadow: hsl(224, 28%, 35%);
+
+  --bg-tertiary-key-main: hsl(6, 63%, 50%);
+  --bg-tertiary-key-shadow: hsl(6, 70%, 34%);
+
   --bg-key-main-toggle: hsl(222, 31%, 20%);
   --bg-screen: hsl(224, 36%, 15%);
 
-
-  /* ==== color ==== */
-  --clr-primary-100: hsl(172, 67%, 45%);
-  --clr-primary-200: hsla(26, 100%, 55%, 0.75);
-  --clr-primary-400: hsl(26, 100%, 55%);
-
-  --clr-neutral-100: hsl(0, 0%, 100%);
-  --clr-neutral-200: hsl(189, 41%, 97%);
-  --clr-neutral-300: hsl(185, 41%, 84%);
-  --clr-neutral-400: hsl(184, 14%, 56%);
-  --clr-neutral-500: hsl(186, 14%, 43%);
-  --clr-neutral-800: hsl(183, 100%, 15%);
-  --clr-neutral-900: hsl(0, 0%, 0%);
+  --clr-neutral: hsl(0, 0%, 100%);
 
   /* ==== font family ==== */
   --ff: "League Spartan", sans-serif;
@@ -56,6 +54,82 @@
 
   /* ==== border radius ==== */
   --br: 0.5rem;
+}
+
+[data-theme="1"] {
+  --bg-main: hsl(222, 26%, 31%);
+  --bg-main-toggle: hsl(222, 31%, 20%);
+  --bg-screen: hsl(224, 36%, 15%);
+  --display-font-clr: hsl(0, 100%, 100%);
+
+  --primary-font-clr: hsl(221, 14%, 31%);
+  --secondary-font-clr: hsl(0, 100%, 100%);
+  --tertiary-font-clr: hsl(0, 100%, 100%);
+
+  --bg-primary-key-main: hsl(0, 0%, 90%);
+  --bg-primary-key-hover: hsla(0, 100%, 100%);
+  --bg-primary-key-shadow: hsl(28, 16%, 65%);
+
+  --bg-secondary-key-main: hsl(225, 21%, 49%);
+  --bg-secondary-key-hover: hsla(225, 11%, 57%, 0.8);
+  --bg-secondary-key-shadow: hsl(224, 28%, 35%);
+
+  --bg-tertiary-key-main: hsl(6, 63%, 50%);
+  --bg-tertiary-key-hover: hsla(6, 71%, 60%, 0.8);
+  --bg-tertiary-key-shadow: hsl(6, 70%, 34%);
+
+  --bg-key-main-toggle: hsl(222, 31%, 20%);
+  --bg-screen: hsl(224, 36%, 15%);
+}
+
+[data-theme="2"] {
+  --bg-main: hsl(0, 0%, 90%);
+  --bg-main-toggle: hsl(0, 5%, 81%);
+  --bg-screen: hsl(0, 0%, 93%);
+  --display-font-clr: hsl(60, 10%, 19%);
+
+  --primary-font-clr: hsl(60, 10%, 19%);
+  --secondary-font-clr: hsl(0, 100%, 100%);
+  --tertiary-font-clr: hsl(0, 100%, 100%);
+
+  --bg-primary-key-main: hsl(0, 0%, 90%);
+  --bg-primary-key-hover: hsla(0, 0%, 100%, 0.8);
+  --bg-primary-key-shadow: hsl(35, 11%, 61%);
+
+  --bg-secondary-key-main: hsl(185, 42%, 37%);
+  --bg-secondary-key-hover: hsla(185, 42%, 37%, 0.8);
+  --bg-secondary-key-shadow: hsl(185, 58%, 25%);
+
+  --bg-tertiary-key-main: hsl(25, 98%, 40%);
+  --bg-tertiary-key-hover: hsla(25, 98%, 40%, 0.8);
+  --bg-tertiary-key-shadow: hsl(25, 99%, 27%);
+
+  --bg-key-main-toggle: hsl(0, 5%, 81%);
+}
+
+[data-theme="3"] {
+  --bg-main: hsl(268, 75%, 9%);
+  --bg-main-toggle: hsl(268, 71%, 12%);
+  --bg-screen: hsl(268, 71%, 12%);
+  --display-font-clr: hsl(52, 100%, 62%);
+
+  --primary-font-clr: hsl(52, 100%, 62%);
+  --secondary-font-clr: hsl(0, 100%, 100%);
+  --tertiary-font-clr: hsl(198, 20%, 13%);
+
+  --bg-primary-key-main: hsl(268, 47%, 21%);
+  --bg-primary-key-hover: hsla(268, 33%, 45%, 0.8);
+  --bg-primary-key-shadow: hsl(290, 70%, 36%);
+
+  --bg-secondary-key-main: hsl(281, 89%, 26%);
+  --bg-secondary-key-hover: hsla(281, 75%, 47%, 0.8);
+  --bg-secondary-key-shadow: hsl(285, 91%, 52%);
+
+  --bg-tertiary-key-main: hsl(176, 100%, 44%);
+  --bg-tertiary-key-hover: hsla(176, 100%, 50%, 0.8);
+  --bg-tertiary-key-shadow: hsl(177, 92%, 70%);
+
+  --bg-key-main-toggle: hsl(268, 71%, 12%);
 }
 
 *,
@@ -69,6 +143,55 @@
 html {
   font-family: var(--ff);
   font-variant-numeric: tabular-nums;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.theme {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-200);
+}
+
+.theme span {
+  color: var(--display-font-clr);
+  text-transform: uppercase;
+  font-size: var(--fs-100);
+}
+
+.theme menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-50);
+  background-color: var(--bg-main-toggle);
+  width: 55px;
+  height: 20px;
+  border-radius: calc(var(--br) + var(--spacing-50));
+}
+
+.theme menu button {
+  border: solid 1px transparent;
+  aspect-ratio: 1/1;
+  width: 27%;
+  height: 100%;
+  border-radius: var(--br);
+  position: relative;
+
+    &:hover{
+      cursor: pointer;
+      background-color: black;
+    }
+}
+
+.theme menu button span {
+  position: absolute;
+  top: 0;
+  transform: translateX(-3px) translateY(-15px);
 }
 
 body {
@@ -97,11 +220,19 @@ body {
 }
 
 .logo {
-  color: #fff;
+  color: var(--display-font-clr);
   font-size: var(--fs-700);
 }
 .screen {
+  display: flex;
   background-color: var(--bg-screen);
+  font-size: var(--fs-800);
+  font-weight: var(--fw-bold);
+  padding: var(--spacing-300);
+  align-items: center;
+  justify-content: right;
+  font-family: var(--ff);
+  color: var(--display-font-clr);
   height: 100px;
   width: 100%;
   border-radius: var(--br);
@@ -111,6 +242,49 @@ body {
   height: 400px;
   width: 100%;
   border-radius: var(--br);
+  padding: var(--spacing-200);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: var(--spacing-400);
+}
+.key {
+  border: none;
+  border-radius: var(--br);
+  font-size: var(--fs-700);
+  font-family: var(--ff);
+  font-weight: var(--fw-bold);
+  text-transform: uppercase;
+  color: var(--primary-font-clr);
+  background-color: var(--bg-primary-key-main);
+  box-shadow: 0px 4px 0px var(--bg-primary-key-shadow);
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--bg-primary-key-hover);
+  }
+}
+.key.secondary-font {
+  background-color: var(--bg-secondary-key-main);
+  box-shadow: 0px 4px 0px var(--bg-secondary-key-shadow);
+  color: var(--secondary-font-clr);
+
+  &:hover {
+    background-color: var(--bg-secondary-key-hover);
+  }
+}
+.key.tertiary-font {
+  background-color: var(--bg-tertiary-key-main);
+  box-shadow: 0px 4px 0px var(--bg-tertiary-key-shadow);
+  color: var(--tertiary-font-clr);
+
+  &:hover {
+    background-color: var(--bg-tertiary-key-hover);
+  }
+}
+.span-2 {
+  grid-column: span 2;
 }
 
 

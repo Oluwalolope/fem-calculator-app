@@ -1,8 +1,6 @@
 const ScreenDisplay = () => {
     return (
-        <>
-            <div className="screen"></div>
-        </>
+        <div className="screen">399,981</div>
     );
 }
  
