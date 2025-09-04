@@ -262,17 +262,26 @@ body {
 }
 .screen {
   display: flex;
+  flex-direction: column;
   background-color: var(--bg-screen);
   font-size: var(--fs-800);
   font-weight: var(--fw-bold);
   padding: var(--spacing-300);
-  align-items: center;
-  justify-content: right;
+  align-items: flex-end;
+  justify-content: space-between;
   font-family: var(--ff);
   color: var(--display-font-clr);
   height: 100px;
   width: 100%;
   border-radius: var(--br);
+}
+.current-operand {
+  font-size: var(--fs-800);
+}
+.previous-operand {
+  font-size: var(--fs-400);
+  color: var(--secondary-font-clr);
+  font-weight: var(--fw-light);
 }
 .keypad {
   background-color: var(--bg-main-toggle);
