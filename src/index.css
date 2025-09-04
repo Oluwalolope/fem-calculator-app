@@ -280,7 +280,7 @@ body {
 }
 .previous-operand {
   font-size: var(--fs-400);
-  color: var(--secondary-font-clr);
+  color: var(--display-font-clr);
   font-weight: var(--fw-light);
 }
 .keypad {
@@ -331,6 +331,17 @@ body {
 }
 .span-2 {
   grid-column: span 2;
+}
+
+.attribution {
+  font-size: var(--fs-200);
+  text-align: center;
+  color: var(--bg-secondary-key-main);
+  margin-top: var(--spacing-400);
+}
+a, a:visited, a:active {
+  font-family: var(--ff);
+  color: var(--display-font-clr);
 }
 
 
