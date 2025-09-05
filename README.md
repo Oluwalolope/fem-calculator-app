@@ -1,12 +1,67 @@
-# React + Vite
+# Calculator App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive calculator application built as part of the [Frontend Mentor Calculator App Challenge](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29). This project demonstrates a clean UI, theming, and interactive functionality using React and vanilla CSS.
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React (functional components, hooks)
+- Vanilla CSS (custom properties for theming)
+- [Frontend Mentor Challenge assets](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29)
+- HTML5 (via JSX)
+- JavaScript (ES6+)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+- Basic arithmetic operations (addition, subtraction, multiplication, division)
+- Responsive design for mobile and desktop
+- Multiple themes using CSS custom properties
+- Keyboard support for input
+- Accessible and user-friendly interface
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or higher recommended)
+- npm or yarn
+
+### Installation
+
+```bash
+git clone https://github.com/Oluwalolope/fem-calculator-app.git
+cd fem-calculator-app
+npm install
+```
+
+### Running Locally
+
+```bash
+npm start
+```
+
+Open [http://localhost:5173](http://localhost:5173) to view the app in your browser.
+
+## Folder Structure
+
+```
+fem-calculator-app/
+├── public/
+├── src/
+│   ├── components/
+│   ├── styles/
+│   ├── App.js
+│   └── index.js
+├── README.md
+└── package.json
+```
+
+## Credits
+
+- Challenge by [Frontend Mentor](https://www.frontendmentor.io/)
+- Developed by [Oluwalolope Adeleye](https://github.com/Oluwalolope/)
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
