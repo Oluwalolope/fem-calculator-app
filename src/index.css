@@ -275,7 +275,7 @@ body {
   width: 100%;
   border-radius: var(--br);
   word-wrap: break-word;
-  overflow-wrap: break-word;
+  overflow-wrap: anywhere;
   text-align: right;
 }
 .current-operand {

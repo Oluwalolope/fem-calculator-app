@@ -20,7 +20,7 @@ const reducer = (state, {type, payload}) => {
       }
       if (payload === '0' && state.currentOperand === '0') return state
       if (payload === '.' && state.currentOperand === '') return state
-      if (payload === '.' && state.currentOperand.includes('.')) return state
+      if (payload === '.' && state.currentOperand.toString().includes('.')) return state
       return {
         ...state,
         currentOperand: `${state.currentOperand || ''}${payload}`
@@ -50,6 +50,13 @@ const reducer = (state, {type, payload}) => {
     case ACTIONS.CLEAR:
       return {}
     case ACTIONS.DELETE_DIGIT:
+      if (state.overwrite) {
+        return {
+          ...state,
+          overwrite: false,
+          currentOperand: null
+        }
+      }
       if (state.currentOperand == null) return state
       return {
         ...state,
@@ -59,6 +66,7 @@ const reducer = (state, {type, payload}) => {
       if (state.currentOperand == null || state.previousOperand == null || state.operation == null) return state
       return {
         ...state,
+        overwrite: true,
         previousOperand: null,
         operation: null,
         currentOperand: evaluate(state)
