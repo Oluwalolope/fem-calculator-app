@@ -1,11 +1,11 @@
-const ScreenDisplay = () => {
+const ScreenDisplay = ({currentOperand, previousOperand, operation}) => {
     return (
         <div className="screen">
             <div className="previous-operand">
-                300,000 + 99,981
+                {previousOperand} {operation}
             </div>
             <div className="current-operand">
-                399,981
+                {currentOperand}
             </div>
         </div>
     );

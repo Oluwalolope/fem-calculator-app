@@ -271,9 +271,12 @@ body {
   justify-content: space-between;
   font-family: var(--ff);
   color: var(--display-font-clr);
-  height: 100px;
+  min-height: 100px;
   width: 100%;
   border-radius: var(--br);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  text-align: right;
 }
 .current-operand {
   font-size: var(--fs-800);

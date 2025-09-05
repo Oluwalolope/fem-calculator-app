@@ -1,6 +1,10 @@
-const CalculatorKey = ({colourType, gridSpan, value}) => {
+const CalculatorKey = ({functionType, dispatch, colourType, gridSpan, value}) => {
+    const handleClick = () => {
+        dispatch({type: functionType, payload: value});
+    };
+
     return (
-        <button className={`key span-${gridSpan} ${colourType}-font`}>{value}</button>
+        <button className={`key span-${gridSpan} ${colourType}-font`} onClick={handleClick}>{value}</button>
     );
 }
  
